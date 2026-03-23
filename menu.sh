@@ -1,4 +1,9 @@
-#!bin/bash
+#!/bin/bash
+
+if [ -z "$FILENAME" ]; then
+  echo "Error: definir variable de entorno FILENAME"
+  exit 1
+fi
 
 if [ "$1" == "-d" ]
 then
